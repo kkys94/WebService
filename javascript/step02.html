@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatyp</title>
+    <script>
+        //1.number type
+        let num1 = 10;//int 
+        let num2 = 20.1; //float 
+        console.log(typeof num1);
+        console.log(typeof num2);
+        
+        //2. string type
+        let myname = "강유선";
+        let yourName ='개리';
+        console.log(typeof myname); 
+
+        //3.boolean type
+        let isRun = true;
+        let isGreater = 10>5; 
+        console.log(typeof isRun); 
+      
+        //4. udefined type -> 0으로 생각행
+        let a;
+        let b = undefined; 
+        let c = a+1;
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(c);//NaN->숫자가 아님 
+
+        //5. null -> object 
+        let d = null; 
+        console.log(typeof d); //object 
+        let e = d+1; 
+        console.log(e); // 1 
+
+        console.log(a==d); //a; undefined d; null  -> true : 값 비교 
+        console.log(a===d); // undefined/ null, 값이 없음. -> faluse : 값과 자료 형 비교 
+
+        //6.object 
+        const obj = {num : 1, name :'개리', isMan : true};
+        console.log(typeof obj); //object
+        //array type
+        const names = ['강유선','개리','잡스'];   
+        console.log(typeof names);  //object 
+
+        //8. function type 
+        //함수식
+        const f = function(){
+
+        }
+        f(); 
+        //선언적 함수
+        function sum(){    
+        }
+        sum();
+        console.log(typeof f); //function 
+        console.log(typeof sum); //function 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

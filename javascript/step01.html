@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         //한줄 주석
+         /*여러줄 주석*/
+         //숫자를 선언하는 방법
+         var num1 = 1000;
+         var num2 = 2000;//var는 이중선언 가능
+         console.log(num1);//system.out.pritnln();  
+
+         //문자열선언 방법
+         var myName = '강유선';
+         var yourname = "토리";
+        console.log(myName);
+        console.log(yourname);
+        var multiName = `asdfa sdf 
+        asffgasfafaas
+        asfaf`; //es6에서 추가된 문자열 표기법
+        console.log(multiName);
+ 
+        console.log(kpc);
+        var kpc="생산성 본부"; //variable hoisting 
+        
+        foo();
+        function foo(){ //function hositing
+            alert("안녕<3");
+        }
+       /*
+       ES 6 에서는 var 지양. let, const 사용. 
+       원시형에서 변수는 let, 상수는 const 선언, 참조형은 const 선언
+       */ 
+
+        let a1 = 1000;
+       // let a1 = 1000; //이중선언 안됨
+        console.log(a1); 
+
+        let a2 = 10; //variable hoisting (X)
+        console.log(a2);
+       
+        const d1 = 10; //상수변수
+       // d1 = 20; 값 변경 불가 
+       
+       const e1 = [1,2,3]; 
+       e1.push(4); 
+       console.log(e1);
+    
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
